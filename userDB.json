@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name" : "tanaka",
+    "nickname" : "田中太郎",
+    "password" : "password"
+  },
+  {
+    "id": 2,
+    "name" : "jiro",
+    "nickname" : "鈴木次郎",
+    "password" : "password"
+  }
+]
