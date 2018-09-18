@@ -60,8 +60,13 @@ apiRoutes.get('/me', VerifyToken, function(req, res, next) {
   const user = users.filter(user => user.name == req.decoded.name);
 
   if (user[0] == undefined) return res.status(404).send("ユーザが見つかりません。");
-
-    res.status(200).send(user[0]);
+  const u = user[0];
+  const payload = {
+    id: u.id,
+    name: u.name,
+    nickname: u.nickname
+  }
+  res.status(200).send(payload);
 });
 
 app.listen(port);
