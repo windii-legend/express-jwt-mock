@@ -49,7 +49,6 @@ apiRoutes.post('/authenticate', [
     }
     var token = jwt.sign(payload, config.secret);
     res.json({
-      success: true,
       token: token
     });
   }
